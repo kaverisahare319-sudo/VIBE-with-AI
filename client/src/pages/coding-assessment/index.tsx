@@ -641,9 +641,9 @@ async function evaluateWithBackend(
           runtimePercentile: r.runtimePercentile,
           attempts: prevAttempts + 1, timeTakenSec,
           locked: status === 'correct',
-          aiFeedback: r.aiFeedback,
-          timeComplexity: r.timeComplexity,
-          spaceComplexity: r.spaceComplexity,
+          aiFeedback: (r as any).aiFeedback,
+timeComplexity: (r as any).timeComplexity,
+spaceComplexity: (r as any).spaceComplexity,
         };
       }
 

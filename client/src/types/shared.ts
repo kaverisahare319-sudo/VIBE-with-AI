@@ -41,6 +41,8 @@ export interface ResumeAnalysis {
   weaknesses: string[];
   suggestions: string[];
   filename: string;
+  targetRole?: string;
+  roleMatchLabel?: string;
   // AI Optimization
   optimizedScore: number;
   optimizedStructureScore: number;
