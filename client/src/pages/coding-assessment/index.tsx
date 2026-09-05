@@ -593,7 +593,7 @@ async function evaluateWithBackend(
         status: string; processed: number; total: number;
         result?: { passed: number; total: number; executionMs: number; memoryMB: number;
                    score: number; maxScore: number; status: string; stdout: string;
-                   compilationError?: string; runtimePercentile: number };
+                   compilationError?: string; runtimePercentile: number; aiFeedback?: string; timeComplexity?: string; spaceComplexity?: string };
         error?: string;
       };
 
