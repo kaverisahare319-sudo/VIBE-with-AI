@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+server/.env
+client/.env
+
+# Build outputs
+dist/
+client/dist/
+server/dist/
+build/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lint & test reports
+*.log
+eslint-report.json
+eslint-results.json
+eslint-results.txt
+eslint_out.json
+client/eslint-report.json
+client/eslint-results.json
+client/eslint-results.txt
+client/eslint_out.json
